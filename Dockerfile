@@ -33,6 +33,7 @@ RUN python -m pip install --no-cache-dir \
     && uv pip install -r requirements.txt --no-cache-dir --system \
     && uv pip install socksio uv pilk --no-cache-dir --system \
     && uv pip install "funasr-onnx==0.4.6" --no-cache-dir --system \
+    && uv pip install modelscope --no-cache-dir --system \
     && uv pip install --upgrade "certifi>=2026.10.19" "pip>=26.2.2" --no-cache-dir --system \
     && uv pip install -e . --no-deps --system \
     && touch /AstrBot/.astrbot
